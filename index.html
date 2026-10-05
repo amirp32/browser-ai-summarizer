@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Text Summarizer</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>AI Text Summarizer</h1>
+
+        <p class="description">
+            Summarize your text directly in your browser.
+        </p>
+
+        <div class="model-status">
+            <span id="statusDot"></span>
+
+            <span id="modelStatus">
+                Loading AI model...
+            </span>
+        </div>
+
+        <div
+            id="progressContainer"
+            class="progress-container"
+        >
+            <div id="progressBar"></div>
+        </div>
+
+        <textarea
+            id="input"
+            placeholder="Paste your text here..."
+        ></textarea>
+
+        <div class="input-info">
+
+            <span id="wordCount">
+                Words: 0
+            </span>
+
+            <span>
+                Max: 700 words
+            </span>
+
+        </div>
+
+        <button id="summarizeBtn">
+            Summarize
+        </button>
+
+        <section class="result">
+            <h2>Summary</h2>
+
+            <p
+                id="summaryWordCount"
+                class="summary-info"
+            >
+                Summary words: 0
+            </p>
+
+            <p id="output">
+                Your summary will appear here.
+            </p>
+
+            <button
+                id="copyBtn"
+                class="secondary-btn"
+            >
+                Copy Summary
+            </button>
+
+            <button
+                id="clearBtn"
+                class="secondary-btn"
+            >
+                Clear
+            </button>
+        </section>
+
+        <div class="privacy-notice">
+
+            <strong>Private by design</strong>
+
+            <p>
+                Your text is processed locally in your browser.
+                It is not sent to our servers.
+            </p>
+
+        </div>
+
+    </main>
+
+    <script
+        type="module"
+        src="app.js"
+    ></script>
+
+</body>
+
+</html>
