@@ -1,3 +1,9 @@
+## Live Demo
+
+Try the application here:
+
+https://amirp32.github.io/browser-ai-summarizer/
+
 # AI Text Summarizer
 
 A privacy-focused AI text summarizer that runs directly in the user's browser using Transformers.js.
